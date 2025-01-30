@@ -43,7 +43,7 @@ const LandingFooter = () => {
               >
                 Services
               </ScrollLink>
-             <ScrollLink
+              <ScrollLink
                 smooth
                 to="contact"
                 offset={-60}
@@ -56,8 +56,20 @@ const LandingFooter = () => {
               <h6 className="font-medium mb-1">Contact Us</h6>
               <div className="flex flex-col">
                 <h6 className="text-[.9rem] mb-1">Phone</h6>
-                <Link className="text-black/80 desc text-sm">
+                <Link
+                  to={`tel:${companyDetails.phone}`}
+                  className="text-black/80 desc text-sm"
+                >
                   {companyDetails.phone}
+                </Link>
+              </div>
+              <div className="flex flex-col">
+                <h6 className="text-[.9rem] mb-1">Email</h6>
+                <Link
+                  to={`mailto:${companyDetails.email}`}
+                  className="text-black/80 desc text-sm"
+                >
+                  {companyDetails.email}
                 </Link>
               </div>
               <div className="flex flex-col mt-2">

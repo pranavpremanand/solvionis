@@ -39,6 +39,15 @@ const WebsiteFooter = () => {
                   {companyDetails.phone}
                 </Link>
               </div>
+              <div className="flex flex-col">
+                <h6 className="text-[.9rem] mb-1">Email</h6>
+                <Link
+                  to={`mailto:${companyDetails.email}`}
+                  className="text-black/80 desc text-sm"
+                >
+                  {companyDetails.email}
+                </Link>
+              </div>
               <div className="flex flex-col mt-2">
                 <h6 className="text-[.9rem] mb-1">Office Address</h6>
                 <p className="text-black/80 desc text-sm max-w-[15rem]">
