@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import toast from "react-hot-toast";
-import { BsFacebook, BsLinkedin, BsTwitter, BsYoutube } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { Link, useNavigate } from "react-router-dom";
 import { companyDetails } from "../../constant";
 import { useForm } from "react-hook-form";
@@ -215,19 +215,27 @@ const ContactForm = () => {
           <div className="flex items-center gap-3">
             <Link
               target="_blank"
-              to="https://www.facebook.com/profile.php?id=100087571897636&mibextid=ZbWKwL"
+              to={companyDetails.facebook}
               className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
             >
               <BsFacebook className="text-xl group-hover:text-primary transition-all duration-300" />
             </Link>
-            <Link className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center">
+            <Link
+              target="_blank"
+              to={companyDetails.twitter}
+              className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
+            >
               <BsTwitter className="text-xl group-hover:text-primary transition-all duration-300" />
             </Link>
-            <Link className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center">
+            <Link
+              target="_blank"
+              to={companyDetails.linkedin}
+              className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center"
+            >
               <BsLinkedin className="text-xl group-hover:text-primary transition-all duration-300" />
             </Link>
-            <Link className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center">
-              <BsYoutube className="text-xl group-hover:text-primary transition-all duration-300" />
+            <Link target="_blank" to={companyDetails.instagram} className="group w-[2.5rem] h-[2.5rem] rounded-full border-primary border flex justify-center items-center">
+              <BsInstagram className="text-xl group-hover:text-primary transition-all duration-300" />
             </Link>
           </div>
         </div>

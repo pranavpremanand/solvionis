@@ -20,7 +20,7 @@ L.Marker.prototype.options.icon = DefaultIcon;
 
 const MapComponent = () => {
   // Use useMemo to memoize the location array
-  const location = useMemo(() => [17.2473, 80.1514], []);
+  const location = useMemo(() => [12.9850, 77.7430], []);
 
   const mapRef = useRef(); // Reference to the map
 
