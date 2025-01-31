@@ -74,6 +74,7 @@ export const companyDetails = {
   linkedin:
     "https://www.linkedin.com/company/solvionis-technologies/?viewAsMember=true",
   instagram: "https://www.instagram.com/solvionis/?hl=en",
+  whatsapp:"https://api.whatsapp.com/send/?phone=%2B919381452155&text&type=phone_number&app_absent=0"
 };
 
 // website routes
