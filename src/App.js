@@ -13,6 +13,7 @@ import SpinnerContextProvider, {
   LoadingSpinnerContext,
 } from "./componets/SpinnerContext";
 import ScrollToTop from "./componets/common/ScrollToTop";
+import WhatsappButton from "./componets/common/WhatsappButton";
 const Thankyou = lazy(() => import("./pages/Thankyou"));
 
 AOS.init({
@@ -25,6 +26,7 @@ export default function App() {
       <LoadingSpinnerContext />
       <Suspense fallback={<LoadingSpinner />}>
         <ScrollToTop />
+        <WhatsappButton />
         <Routes>
           {/* Website Pages */}
           {routes.map(({ component, name, path }, index) => (

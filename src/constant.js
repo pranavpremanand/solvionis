@@ -65,7 +65,6 @@ export {
 // company details
 export const companyDetails = {
   phone: "+91-9381452155",
-  whatsapp: "+91-9381452155",
   address:
     "R SEENAPPA, SITE NO-26, TC PALYA CROSS, 1 VINAYAKA LAYOUT, BATTRAHALLI, 560049.",
   email: "solvionis@gmail.com",
