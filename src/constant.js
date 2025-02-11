@@ -204,6 +204,7 @@ export const allServices = [
     desc: "Crafting modern, responsive, and scalable websites that deliver outstanding user experiences. From front-end to back-end, our web solutions are tailored to meet your business needs.",
     detailContent:
       "At Solvionis, we specialize in delivering high-performance websites and digital platforms that help businesses thrive online. From custom web development to responsive design, we build solutions that are both user-friendly and visually stunning. Let's turn your vision into a reality.",
+      landingPageLink:'/web-development'
   },
   {
     id: 2,
@@ -211,6 +212,7 @@ export const allServices = [
     desc: "Creating high-performance mobile applications for iOS and Android that engage users and drive business growth. Our apps are designed with a focus on usability, speed, and seamless functionality.",
     detailContent:
       "At Solvionis, we specialize in creating intuitive, high-performing mobile applications tailored to meet the unique needs of businesses across industries. Our expert team combines technical expertise with creative design to develop apps that drive engagement and growth.",
+      landingPageLink:'/app-development'
   },
   {
     id: 3,

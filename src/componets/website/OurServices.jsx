@@ -32,10 +32,9 @@ const OurServices = ({ length }) => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mt-3">
           {services.map((service) => (
             <div
-              onClick={() => handleSelectServiceToShowDetail(service)}
               data-aos="fade-up"
               key={service.id}
-              className="rounded-lg p-[1px] bg-gradient-to-r from-secondary to-primary cursor-pointer"
+              className="rounded-lg p-[1px] bg-gradient-to-r from-secondary to-primary"
             >
               <div className="rounded-lg bg-background hover:bg-primary/40 hover:text-white transition-all duration-300 p-5 flex flex-col justify-between items-start text-start h-full gap-4">
                 <div className="flex flex-col gap-3">
@@ -44,12 +43,22 @@ const OurServices = ({ length }) => {
                   </h5>
                   <p className="desc">{service.desc}</p>
                 </div>
-                <button
-                  onClick={() => handleSelectServiceToShowDetail(service)}
-                  className="desc mt-1 flex items-center gap-3 transition-all duration-300"
-                >
-                  Learn More <PiCaretDoubleRightBold />
-                </button>
+                {service.landingPageLink ? (
+                  <Link
+                    to={service.landingPageLink}
+                    target="_blank"
+                    className="desc mt-1 flex items-center gap-3 transition-all duration-300"
+                  >
+                    Learn More <PiCaretDoubleRightBold />
+                  </Link>
+                ) : (
+                  <button
+                    onClick={() => handleSelectServiceToShowDetail(service)}
+                    className="desc mt-1 flex items-center gap-3 transition-all duration-300"
+                  >
+                    Learn More <PiCaretDoubleRightBold />
+                  </button>
+                )}
               </div>
             </div>
           ))}
@@ -69,10 +78,7 @@ const OurServices = ({ length }) => {
         lockBackgroundScroll
       >
         <div className="mb-3 flex items-center justify-end pr-[.7rem] py-[.4rem]">
-          <button
-            onClick={() => setIsOpen(false)}
-            className="text-[2.2rem]"
-          >
+          <button onClick={() => setIsOpen(false)} className="text-[2.2rem]">
             <IoMdClose />
           </button>
         </div>
