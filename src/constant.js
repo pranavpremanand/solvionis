@@ -68,7 +68,7 @@ export const companyDetails = {
   address:
     "R SEENAPPA, SITE NO-26, TC PALYA CROSS, 1 VINAYAKA LAYOUT, BATTRAHALLI, 560049.",
   email: "solvionis@gmail.com",
-  facebook: "https://www.facebook.com/solvionis.technologies",
+  facebook: "https://www.facebook.com/profile.php?id=61572961121013",
   twitter: "https://x.com/solvionis",
   linkedin:
     "https://www.linkedin.com/company/solvionis-technologies/?viewAsMember=true",
