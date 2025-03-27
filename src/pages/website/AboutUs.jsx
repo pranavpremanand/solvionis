@@ -10,6 +10,7 @@ import {
 } from "../../constant";
 import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
 import aboutUsImg from "../../assets/images/landing-aboutus.png";
+import Testimonials from "../../componets/common/Testimonials";
 
 const AboutUs = () => {
   return (
@@ -242,7 +243,7 @@ const AboutUs = () => {
       </div>
       <UnlockEfficiency />
       {/* <OurServices length={3} /> */}
-      {/* <Testimonials/> */}
+      <Testimonials />
     </>
   );
 };

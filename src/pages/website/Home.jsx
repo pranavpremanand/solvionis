@@ -8,6 +8,7 @@ import { homeBannerVideo } from "../../constant";
 import OurServices from "../../componets/website/OurServices";
 import EndlessOpportunitiesSection from "../../componets/common/EndlessOpportunitiesSection";
 import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
+import Testimonials from "../../componets/common/Testimonials";
 
 const Home = () => {
   return (
@@ -121,6 +122,7 @@ const Home = () => {
       <WhyChooseUs />
       <UnlockEfficiency />
       <EndlessOpportunitiesSection />
+      <Testimonials />
       <Contact />
     </>
   );

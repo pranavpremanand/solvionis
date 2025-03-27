@@ -10,7 +10,7 @@ const Services = () => {
       <Banner page="Services" />
       <OurServices />
       <UnlockEfficiency />
-      {/* <Testimonials /> */}
+      <Testimonials />
     </>
   );
 };

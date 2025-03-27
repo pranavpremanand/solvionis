@@ -21,6 +21,7 @@ import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
 import Portfolio from "../../componets/common/Portfolio";
 import ContactForm from "../../componets/common/ContactForm";
 import BrandLogos from "../../componets/common/BrandLogos";
+import Testimonials from "../../componets/common/Testimonials";
 
 export const LandingPage = ({ page }) => {
   const isWebDevelopment = Boolean(page === "web-development");
@@ -229,6 +230,7 @@ export const LandingPage = ({ page }) => {
 
       <UnlockEfficiency />
       <EndlessOpportunitiesSection />
+      <Testimonials />
       <BrandLogos />
       <Contact />
     </>

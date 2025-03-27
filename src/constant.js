@@ -66,7 +66,7 @@ export {
 export const companyDetails = {
   phone: "+91-9381452155",
   address:
-    "R SEENAPPA, SITE NO-26, TC PALYA CROSS, 1 VINAYAKA LAYOUT, BATTRAHALLI, 560049.",
+    "Jai ram Anna Building, TC Palya, Krishnarajapuram, Bengaluru, Karnataka 560049",
   email: "solvionis@gmail.com",
   facebook: "https://www.facebook.com/profile.php?id=61572961121013",
   twitter: "https://x.com/solvionis",
@@ -97,39 +97,6 @@ export const routes = [
     name: "Contact Us",
     path: "/contact-us",
     component: <ContactUs />,
-  },
-];
-
-export const faqs = [
-  {
-    id: 1,
-    question: "What is Web Development?",
-    answer:
-      "Web development refers to the process of creating websites and web applications. It includes tasks such as web design, web development, web programming, and database management.",
-  },
-  {
-    id: 2,
-    question: "What is Web Development?",
-    answer:
-      "Web development refers to the process of creating websites and web applications. It includes tasks such as web design, web development, web programming, and database management.",
-  },
-  {
-    id: 3,
-    question: "What is Web Development?",
-    answer:
-      "Web development refers to the process of creating websites and web applications. It includes tasks such as web design, web development, web programming, and database management.",
-  },
-  {
-    id: 4,
-    question: "What is Web Development?",
-    answer:
-      "Web development refers to the process of creating websites and web applications. It includes tasks such as web design, web development, web programming, and database management.",
-  },
-  {
-    id: 5,
-    question: "What is Web Development?",
-    answer:
-      "Web development refers to the process of creating websites and web applications. It includes tasks such as web design, web development, web programming, and database management.",
   },
 ];
 

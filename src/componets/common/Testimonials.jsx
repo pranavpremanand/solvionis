@@ -1,7 +1,5 @@
 import React from "react";
 import { useKeenSlider } from "keen-slider/react";
-import profileImg1 from "../../assets/images/profileimg-1.png";
-import profileImg2 from "../../assets/images/profileimg-2.png";
 import {
   IoArrowBackCircleOutline,
   IoArrowForwardCircleOutline,
@@ -10,17 +8,33 @@ import {
 const reviews = [
   {
     id: 1,
-    profileImg: profileImg1,
-    name: "Brian Manuel",
-    role: "CEO of Innovative Tech Corp",
-    desc: "“The team's dedication and proactive approach ensured a smooth transition, and their ongoing support has been invaluable. I highly recommend Portal for anyone looking to leverage technology to achieve business goals.”",
+    name: "Rohan Sharma",
+    role: "Founder of TechVista Solutions",
+    desc: "“The web development team at Solvionis delivered a sleek and high-performing website that exceeded our expectations. Their attention to detail and commitment to quality made the entire process seamless. Highly recommended!”",
   },
   {
     id: 2,
-    profileImg: profileImg2,
-    name: "Jane Smith",
-    role: "Director of Operations at Green Future Ltd",
-    desc: "“Their thorough risk assessment and tailored security strategy not only protected our data but also enhanced our overall security posture. The team's professionalism and deep knowledge of cybersecurity were impressive.”",
+    name: "Neha Verma",
+    role: "Product Manager at NextGen Apps",
+    desc: "“The app development team at Solvionis demonstrated incredible expertise in bringing our vision to life. The app is intuitive, fast, and exactly what we needed to engage our users effectively. Their support has been top-notch!”",
+  },
+  {
+    id: 3,
+    name: "Amit Raj",
+    role: "CEO of SecureNet Solutions",
+    desc: "“Cybersecurity is critical for our business, and Solvionis ensured our systems are fully protected. Their proactive approach to security audits and real-time monitoring gives us complete peace of mind.”",
+  },
+  {
+    id: 4,
+    name: "Priya Nair",
+    role: "Operations Head at Digital Sphere",
+    desc: "“We needed a robust e-commerce platform, and the web development team at Solvionis delivered an outstanding solution. The website is not only visually appealing but also optimized for performance and user experience.”",
+  },
+  {
+    id: 5,
+    name: "Vikram Iyer",
+    role: "CTO of FinSecure Technologies",
+    desc: "“With rising cyber threats, we needed a strong security framework. The cybersecurity team at Solvionis provided advanced solutions that have strengthened our defense against potential attacks. Their expertise is unparalleled!”",
   },
 ];
 
@@ -91,23 +105,23 @@ const Testimonials = () => {
         <div className="gradient-rounded-text-box" data-aos="fade-up">
           Testimonials
         </div>
-        <h2 className="heading-2 text-white mb-2 text-center" data-aos="fade-up">
+        <h2 className="heading-2 mb-2 text-center" data-aos="fade-up">
           Our Clients' Experiences
         </h2>
         <div ref={sliderRef} className="keen-slider" data-aos="fade-up">
           {reviews.map((item) => (
             <div
               key={item.id}
-              className="keen-slider__slide min-h-[18rem] justify-between text-white p-7 bg-[#101010] rounded-xl flex flex-col gap-4"
+              className="keen-slider__slide min-h-[18rem] justify-between text-white p-7 bg-secondary rounded-xl flex flex-col gap-4"
             >
               <p className="italic desc">{item.desc}</p>
               <div className="flex flex-col gap-2">
                 <div className="flex gap-2">
-                  <img
+                  {/* <img
                     src={item.profileImg}
                     alt={item.name}
                     className="h-[2.5rem] min-w-[2.5rem] max-w-[2.5rem] rounded-full object-cover"
-                  />
+                  /> */}
                   <div className="flex flex-col h-full">
                     <p className="font-medium">{item.name}</p>
                     <p className="text-sm">{item.role}</p>
@@ -123,14 +137,14 @@ const Testimonials = () => {
           className="flex justify-center items-center gap-10 mt-2"
         >
           <button
-            className="text-primary text-5xl hover:text-primary/70 transition-all duration-200"
+            className="text-secondary text-5xl hover:text-secondary/70 transition-all duration-200"
             onClick={handlePrevClick}
             aria-label="Previous slide"
           >
             <IoArrowBackCircleOutline />
           </button>
           <button
-            className="text-primary text-5xl hover:text-primary/70 transition-all duration-200"
+            className="text-secondary text-5xl hover:text-secondary/70 transition-all duration-200"
             onClick={handleNextClick}
             aria-label="Next slide"
           >
