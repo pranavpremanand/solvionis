@@ -38,9 +38,10 @@ const Contact = () => {
       to: companyDetails.email,
       subject: values.subject,
       body: emailBody,
+      name: "Solvionis",
     };
 
-    await fetch("https://smtp-api-tawny.vercel.app/send-email", {
+    await fetch("https://send-mail-redirect-boostmysites.vercel.app/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
