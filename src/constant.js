@@ -73,7 +73,8 @@ export const companyDetails = {
   linkedin:
     "https://www.linkedin.com/company/solvionis-technologies/?viewAsMember=true",
   instagram: "https://www.instagram.com/solvionis/?hl=en",
-  whatsapp:"https://api.whatsapp.com/send/?phone=%2B919381452155&text&type=phone_number&app_absent=0"
+  whatsapp:
+    "https://api.whatsapp.com/send/?phone=%2B919381452155&text&type=phone_number&app_absent=0",
 };
 
 // website routes
@@ -171,7 +172,7 @@ export const allServices = [
     desc: "Crafting modern, responsive, and scalable websites that deliver outstanding user experiences. From front-end to back-end, our web solutions are tailored to meet your business needs.",
     detailContent:
       "At Solvionis, we specialize in delivering high-performance websites and digital platforms that help businesses thrive online. From custom web development to responsive design, we build solutions that are both user-friendly and visually stunning. Let's turn your vision into a reality.",
-      landingPageLink:'/web-development'
+    landingPageLink: "/web-development",
   },
   {
     id: 2,
@@ -179,7 +180,7 @@ export const allServices = [
     desc: "Creating high-performance mobile applications for iOS and Android that engage users and drive business growth. Our apps are designed with a focus on usability, speed, and seamless functionality.",
     detailContent:
       "At Solvionis, we specialize in creating intuitive, high-performing mobile applications tailored to meet the unique needs of businesses across industries. Our expert team combines technical expertise with creative design to develop apps that drive engagement and growth.",
-      landingPageLink:'/app-development'
+    landingPageLink: "/app-development",
   },
   {
     id: 3,
@@ -215,6 +216,28 @@ export const allServices = [
     desc: "Seamlessly transitioning your business operations to the cloud for improved scalability, flexibility, and cost efficiency.",
     detailContent:
       "At Solvionis, we ensure a smooth and secure transition to the cloud, minimizing downtime and maximizing the benefits of cloud technology. Our cloud migration services are tailored to your unique needs, whether you're moving applications, data, or entire infrastructures to a cloud environment.",
+  },
+  {
+    id: 8,
+    title: "Ai Calling for Multiple Services",
+    desc: "A complete solution for businesses aiming to enhance communication with AI-powered calling solutions, making interactions more cost-effective and efficient.",
+    detailContent:
+      "Ai Calling services by Solvionis offer a comprehensive solution for businesses seeking to optimize communication through AI-powered calls. From customer engagement to lead generation, our AI Calling solutions are designed to elevate communication strategies and reduce costs.",
+  },
+  {
+    id: 9,
+    title: "NeuraaCall AI – AI Call Centre",
+    desc: "An AI-powered call center tool for handling customer support, bookings, and lead qualification – 24/7 with natural voice interactions.",
+    detailContent:
+      "NeuraaCall AI is a cutting-edge call center solution powered by advanced AI technology. Designed for businesses needing 24/7 customer support, appointment scheduling, and lead qualification, NeuraaCall ensures seamless and natural conversations that drive results.",
+    landingPageLink: "https://neuraacall.com/",
+  },
+  {
+    id: 10,
+    title: "AI Face Generation for Meetings",
+    desc: "Generate realistic AI avatars for virtual meetings and webinars, maintaining anonymity while enhancing professionalism.",
+    detailContent:
+      "Solvionis offers AI Face Generation technology to create realistic AI avatars for online meetings and webinars. Ideal for remote teams, educators, and webinar hosts, this tool ensures privacy while maintaining a professional appearance.",
   },
 ];
 
